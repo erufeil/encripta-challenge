@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-fondo: #D8DFE8;
+    --color-fondo2: white;
+    --color-texto-normal: #0A3871;
+    --color-texto-secundario: rgb(65, 65, 65);
+    --color-boton-encima: #2c4e77;
+
+
+    --fuente-normal: 'Inter', sans-serif;
+
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2% 2% 2% 2%;
+
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-normal);
+}
+
+.container {
+    display: flex;
+}
+
+.container__izq {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container__izq_header {
+    width: 35%;
+    height: 5%;
+}
+
+textarea {
+    resize: none;
+}
+
+.container__izq__text {
+    margin-left: 10%;
+
+
+}
+
+.box__invisible {
+    background-color: transparent;
+    border: transparent;   
+    font-size: 1.5rem;
+    font-family: var(--fuente-normal);
+    color: var(--color-texto-normal);
+    width:80%;
+    height: 600px;
+}
+
+.container__izq__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 20% 10% 20%;
+}
+
+button {
+    font-family: var(--fuente-normal);
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 180px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: var(--color-boton-encima);
+}
+
+button:active {
+    background-color: var(--color-fondo);
+}
+
+.boton__encriptar {
+    background-color: var(--color-texto-normal);
+    color: white;
+}
+
+
+.boton__desencriptar {
+    background-color: var(--color-fondo2);
+    color: var(--color-texto-normal);
+}
+
+.container__der {
+    border-radius: 25px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2%;
+    background-color: var(--color-fondo2);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoNormal {
+    font-size: 1.5rem;
+    font-family: var(--fuente-normal);
+    color: var(--color-texto-normal);
+}
+
+.textoInfo {
+    font-size: 1.0rem;
+    font-family: var(--fuente-normal);
+    color: var(--color-texto-secundario);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    padding: 5% 5% 5% 5%;
+
+}
+
+.container__der__buscar {
+    width: auto;
+    height: auto;
+    object-fit: fit;
+    justify-content: center;
+}
+.container__der__texto {
+    width: auto;
+    height: min-content;
+   
+}
+.box__encriptada {
+    background-color: transparent;
+    border: transparent; 
+    border-style: none;  
+    font-size: 1.5rem;
+    font-family: var(--fuente-normal);
+    color: var(--color-texto-normal);
+    width:100%;
+ 
+}
+
+
+.textoInfoalineado{
+    font-size: 1.0rem;
+    font-family: var(--fuente-normal);
+    color: var(--color-texto-secundario);
+    text-align: center;
+}
+
+.centrarboton {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
