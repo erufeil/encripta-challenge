@@ -1,25 +1,23 @@
 ## Encripta / Desencripta Mensaje
 
-### Proyecto de Challenge de Alura
+Proyecto de Challenge de Alura
 
 - Estado del proyecto: En Construccion
 
 
 ### Encriptar
-
-Colocar el texto en el lado Izquierdo y presionar el boton de
-               `Encriptar`
+Colocar un mensaje en el lado izquierdo de la pantalla y presionar el boton de 
+`Encriptar`
 
 ### Desencriptar
-Colocar el texto en el lado Izquierdo y presionar el boton de
-               `Desencriptar`
-Es necesario haber ingresado un mensaje encriptado por este misma app
+Colocar un mensaje en el lado izquierdo de la pantalla y presionar el boton de 
+`Desencriptar`
+Es necesario que el texto colocado haya sido encriptado previamente en esta misma app
 
 ### Resultado
-Se obtendran los resultados deseados del lado derecho de la pantalla
+Todos los resultados se obtienen del lado derecho de la pantalla
+
+Creado por **erufeil** / 2024
 
 
-
-
-Creado por **erufeil**
--2024-
+   
