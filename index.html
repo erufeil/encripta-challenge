@@ -18,26 +18,25 @@
                 <img src="./assets/header.png" alt="a de alura" class="container__izq__logo" />
             </div>
             <div class="container__izq__text">
-                <textarea name="textoIngresado" id="textoIngresado" rows="10" cols="50" class="box__invisible"
-                    class="textoNormal">Ingrese el texto aqui</textarea>
+                <textarea name="textoIngresado" id="textoIngresado" rows="10" cols="30" class="box__invisible"
+                    class="textoNormal" placeholder="Ingrese el texto aquí"></textarea>
                 <p class="textoInfo">Solo letras minusculas y sin acentos</p>
             </div>
             <div class="container__izq__buttons">
-                <button type="button" class="boton__encriptar">Encriptar</button>
-                <button type="button" class="boton__desencriptar">Desencriptar</button>
+                <button type="button" class="boton__encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" class="boton__desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
 
         <div class="container__der">
-            <div class="container__der__buscar">
+            <div id="container__der__buscar">
                 <img src="./assets/BuscarLogo.jpg" alt="persona con lupa" />
             </div>
             <div class="container__der__texto">
                 <textarea name="textoCodificado" id="textoCodificado" rows="4" cols="30" class="box__encriptada"
-                    class="textoNormal">Ningún texto encontrado.</textarea>
-            </div>
-            <div>
-                <p class="textoInfoalineado" >Ingresa el texto que quieras <br> Encriptar o Desencriptar</p>
+                    class="textoNormal"></textarea>
+                <h2  id="textoInfoalineado1" class="textoNormal">Ningún texto encontrado.</h2>
+                <p id="textoInfoalineado2" class="textoInfo">Ingresa el texto que quieras <br> Encriptar o Desencriptar</p>
             </div>
             <div class="container__der__button"> 
                 <div class="centrarboton">  <button type="button" class="botonCopiar">Copiar</button> </div>
@@ -54,6 +53,7 @@
         <p class="textoInfo">By ERF - 2024</p>
         <a class="textoInfo" href="http://www.freepik.com">Image Designed by Dooder / Freepik</a>
     </footer>
+    <script> src="index.js"</script>
 </body>
 
 </html>

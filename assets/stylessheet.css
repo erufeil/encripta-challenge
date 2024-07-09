@@ -28,6 +28,9 @@ body {
 }
 
 .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
 }
 
@@ -46,6 +49,12 @@ body {
 
 textarea {
     resize: none;
+}
+
+textarea:focus,
+textarea:active{
+    border: none;
+    outline: none;
 }
 
 .container__izq__text {
