@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador/Desencriptador-Challenge</title>
     <link rel="stylesheet" href="./assets/stylessheet.css">
+    <link rel="shortcut icon" href="assets/favicon.ico">
 </head>
 
 <body>
@@ -15,7 +16,8 @@
 
         <div class="container__izq">
             <div class="container__izq_header">
-                <img src="./assets/header.png" alt="a de alura" class="container__izq__logo" />
+                <div class="logoalura"> <img src="./assets/header.png" alt="a de alura" class="container__izq__logo" /></div>
+                
             </div>
             <div class="container__izq__text">
                 <textarea name="textoIngresado" id="textoIngresado" rows="10" cols="30" class="box__invisible"
@@ -30,7 +32,7 @@
 
         <div class="container__der">
             <div id="container__der__buscar">
-                <img src="./assets/BuscarLogo.jpg" alt="persona con lupa" />
+                <img src="./assets/BuscarLogo.jpg" alt="persona con lupa" class="container__der__buscar_img"/>
             </div>
             <div class="container__der__texto">
                 <textarea name="textoCodificado" id="textoCodificado" rows="4" cols="30" class="box__encriptada"
@@ -39,21 +41,18 @@
                 <p id="textoInfoalineado2" class="textoInfo">Ingresa el texto que quieras <br> Encriptar o Desencriptar</p>
             </div>
             <div class="container__der__button"> 
-                <div class="centrarboton">  <button type="button" class="botonCopiar">Copiar</button> </div>
-                 
+                <div class="centrarboton">  <button type="button" id="botonCopiar" class="botonCopiar" onclick="copiarContenido()">Copiar</button> </div>
             </div>
-
-
         </div>
-
     </main>
-
-
     <footer>
-        <p class="textoInfo">By ERF - 2024</p>
+        <p class="textoInfo">Designed by ERF</p>
+        <p class="textoInfo"> // </p>
+        <p class="textoInfo">2024</p>
+        <p class="textoInfo"> // </p>
         <a class="textoInfo" href="http://www.freepik.com">Image Designed by Dooder / Freepik</a>
     </footer>
-    <script> src="index.js"</script>
+    <script src="index.js"></script>
 </body>
 
 </html>

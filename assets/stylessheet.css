@@ -6,12 +6,7 @@
     --color-texto-normal: #0A3871;
     --color-texto-secundario: rgb(65, 65, 65);
     --color-boton-encima: #2c4e77;
-
-
     --fuente-normal: 'Inter', sans-serif;
-
-
-
 }
 
 * {
@@ -19,10 +14,8 @@
     margin: 0;
 }
 
-body {
-    padding: 2% 2% 2% 2%;
-
-    box-sizing: border-box;
+body {  
+    /*box-sizing: border-box;*/
     background-color: var(--color-fondo);
     color: var(--color-texto-normal);
 }
@@ -30,21 +23,28 @@ body {
 .container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    /*padding: 0% 2% 2% 2%;*/
+    gap: 10vw;
     display: flex;
+    margin-left: 2vw;
 }
 
 .container__izq {
-    width: 80%;
-    height: 80%;
+    width: 50vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1vh;
 }
 
 .container__izq_header {
-    width: 35%;
-    height: 5%;
+    text-align: left;
+    width: auto;
+    height: auto;
+}
+.container__izq__logo {
+    height: 6vh;
 }
 
 textarea {
@@ -58,9 +58,7 @@ textarea:active{
 }
 
 .container__izq__text {
-    margin-left: 10%;
-
-
+    margin-left: 4vw;
 }
 
 .box__invisible {
@@ -69,14 +67,15 @@ textarea:active{
     font-size: 1.5rem;
     font-family: var(--fuente-normal);
     color: var(--color-texto-normal);
-    width:80%;
-    height: 600px;
+    width:45vw;
+    height: 65vh;
 }
 
 .container__izq__buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     padding: 2% 20% 10% 20%;
 }
 
@@ -104,7 +103,6 @@ button:active {
     color: white;
 }
 
-
 .boton__desencriptar {
     background-color: var(--color-fondo2);
     color: var(--color-texto-normal);
@@ -112,8 +110,8 @@ button:active {
 
 .container__der {
     border-radius: 25px;
-    width: 30%;
-    height: auto;
+    width: 30vw;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -136,24 +134,27 @@ button:active {
     color: var(--color-texto-secundario);
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    padding: 5% 5% 5% 5%;
-
-}
-
 .container__der__buscar {
-    width: auto;
-    height: auto;
-    object-fit: fit;
+    /*width: 40%;
+    height: 50%;*/
+    object-fit: contain;
+    /*object-fit: fit; */
     justify-content: center;
 }
+
+.container__der__buscar_img {
+    height: 30vh;
+    width: 20vw;
+    padding: 1% 1% 1% 1%;
+}
+
 .container__der__texto {
-    width: auto;
+    width: 100%;
     height: min-content;
+    text-align: center;
    
 }
+
 .box__encriptada {
     background-color: transparent;
     border: transparent; 
@@ -161,10 +162,8 @@ img {
     font-size: 1.5rem;
     font-family: var(--fuente-normal);
     color: var(--color-texto-normal);
-    width:100%;
- 
+    width:100%; 
 }
-
 
 .textoInfoalineado{
     font-size: 1.0rem;
@@ -179,7 +178,6 @@ img {
 
 footer {
     display: flex;
-    gap: 40px;
+    gap: 1%;
     justify-content: center;
-
 }

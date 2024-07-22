@@ -1,14 +1,21 @@
-let textoIngresado;
-let textoProcesado;
+let textoAProcesar = "";
+let textoProcesado = "";
 let contador = 0;
-let agregar;
+let agregar = "";
 
-
+function inicializaVariables(){
+    textoAProcesar = "";
+    textoProcesado = "";
+    contador = 0;
+    agregar = "";
+}
 
 function encriptar() {
+    inicializaVariables();
+    textoAProcesar = document.getElementById('textoIngresado').value;
     document.getElementById("container__der__buscar").style.display = "none";
-    while (contador < textoIngresado.length) {
-        switch (textoIngresado[contador]) {
+    while (contador < textoAProcesar.length) {
+        switch (textoAProcesar[contador]) {
             case "a":
                 agregar = "ai";
                 break;
@@ -25,20 +32,25 @@ function encriptar() {
                 agregar = "ufat";
                 break;
             default:
-                agregar = textoIngresado[contador];
+                agregar = textoAProcesar[contador];
         }
         textoProcesado = textoProcesado + agregar;
+        console.log(textoProcesado, agregar);
         contador++;
     }
     console.log(textoProcesado);
-    let cargarContenido = document.getElementById="textoCodificado";
-    cargarContenido.innerHTML = textoProcesado;
+    document.getElementById("textoCodificado").innerHTML = textoProcesado;
+    document.getElementById("textoInfoalineado1").style.display = "none";
+    document.getElementById("textoInfoalineado2").style.display = "none";
+
 }
 
 function desencriptar() {
+    inicializaVariables();
+    textoAProcesar = document.getElementById('textoIngresado').value;
     document.getElementById("container__der__buscar").style.display = "none";
-    while (contador < textoIngresado.length) {
-        switch (textoIngresado[contador]) {
+    while (contador < textoAProcesar.length) {
+        switch (textoAProcesar[contador]) {
             case "a":
                 agregar = "a";
                 contador++;
@@ -60,14 +72,25 @@ function desencriptar() {
                 contador +=3;
                 break;
             default:
-                agregar = textoIngresado[contador];
+                agregar = textoAProcesar[contador];
         }
         textoProcesado = textoProcesado + agregar;
+        console.log(textoProcesado, agregar);
         contador++;
     }
     console.log(textoProcesado);
-    let cargarContenido = document.getElementById="textoCodificado";
-    cargarContenido.innerHTML = textoProcesado;
+    document.getElementById("textoCodificado").innerHTML = textoProcesado;
+    document.getElementById("textoInfoalineado1").style.display = "none";
+    document.getElementById("textoInfoalineado2").style.display = "none";
 }
 
-
+async function copiarContenido() {
+    try {
+      await navigator.clipboard.writeText(document.getElementById('textoCodificado').value);
+      console.log('Contenido copiado al portapapeles');
+      /* Resuelto - texto copiado al portapapeles con éxito */
+    } catch (err) {
+      console.error('Error al copiar: ', err);
+      /* Rechazado - fallo al copiar el texto al portapapeles */
+    }
+  }
