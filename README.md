@@ -20,3 +20,10 @@ Es necesario que el texto colocado haya sido encriptado previamente en esta mism
 Todos los resultados se obtienen del lado derecho de la pantalla
 
 Creado por **erufeil** / 2024
+
+---
+
+***version de prueba para descartar***
+`main > version sin js`
+>Cambios:
+>no necesarios
