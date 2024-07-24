@@ -14,7 +14,7 @@
     margin: 0;
 }
 
-body {  
+body {
     /*box-sizing: border-box;*/
     background-color: var(--color-fondo);
     color: var(--color-texto-normal);
@@ -43,6 +43,7 @@ body {
     width: auto;
     height: auto;
 }
+
 .container__izq__logo {
     height: 6vh;
 }
@@ -52,7 +53,7 @@ textarea {
 }
 
 textarea:focus,
-textarea:active{
+textarea:active {
     border: none;
     outline: none;
 }
@@ -63,11 +64,11 @@ textarea:active{
 
 .box__invisible {
     background-color: transparent;
-    border: transparent;   
+    border: transparent;
     font-size: 1.5rem;
     font-family: var(--fuente-normal);
     color: var(--color-texto-normal);
-    width:45vw;
+    width: 45vw;
     height: 65vh;
 }
 
@@ -152,20 +153,20 @@ button:active {
     width: 100%;
     height: min-content;
     text-align: center;
-   
+
 }
 
 .box__encriptada {
     background-color: transparent;
-    border: transparent; 
-    border-style: none;  
+    border: transparent;
+    border-style: none;
     font-size: 1.5rem;
     font-family: var(--fuente-normal);
     color: var(--color-texto-normal);
-    width:100%; 
+    width: 100%;
 }
 
-.textoInfoalineado{
+.textoInfoalineado {
     font-size: 1.0rem;
     font-family: var(--fuente-normal);
     color: var(--color-texto-secundario);
@@ -180,4 +181,85 @@ footer {
     display: flex;
     gap: 1%;
     justify-content: center;
+}
+
+/* Responsive para Tablet=768 y para Celu=375     
+
+@media (max-with:768) {}  */
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1vw;        
+    }
+    .container__izq {
+        width: 95vw;
+        height: 45vh;       
+    }    
+    .box__invisible {
+        width: 90vw;
+        height: 35vh;
+    }
+    .container__der {
+        border-radius: 15px;
+        width: 90vw;
+        height: 29vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;        
+    }
+    .container__der__buscar_img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1vw;        
+    }
+    .container__izq {
+        width: 95vw;
+        height: 55vh;       
+    }    
+    .box__invisible {
+        width: 90vw;
+        height: 35vh;
+    }
+    button {
+        font-weight: 400;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.8rem;
+        width: 200px;;
+    }
+    .container__izq__buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .container__der {
+        border-radius: 15px;
+        width: 90vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;        
+    }
+    .container__der__buscar_img {
+        display: none;
+    }
+    .textoInfo {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    footer {
+        align-items: center;
+    }
+   
 }
