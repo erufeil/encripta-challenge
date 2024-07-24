@@ -2,7 +2,7 @@
 
 Proyecto de Challenge de Alura
 
-- Estado del proyecto: En Construccion
+- Estado del proyecto: Presentable
 
 ## Encriptar
 
@@ -22,8 +22,3 @@ Todos los resultados se obtienen del lado derecho de la pantalla
 Creado por **erufeil** / 2024
 
 ---
-
-***version de prueba para descartar***
-`main > version sin js`
->Cambios:
->no necesarios
