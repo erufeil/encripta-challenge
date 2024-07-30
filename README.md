@@ -2,7 +2,7 @@
 
 Proyecto de Challenge de Alura
 
-- Estado del proyecto: Presentable
+- Estado del proyecto: Presentado [ver sitio][deployado]
 
 ## Encriptar
 
@@ -19,6 +19,11 @@ Es necesario que el texto colocado haya sido encriptado previamente en esta mism
 
 Todos los resultados se obtienen del lado derecho de la pantalla
 
+## Deploy
+
+URL: https://erufeil.github.io/encripta-challenge/
+
 Creado por **erufeil** / 2024
 
 ---
+[deployado]: https://erufeil.github.io/encripta-challenge/
